@@ -1,0 +1,190 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  color: #eee5e5;
+  background-color: #f4f4f4;
+  padding: 20px;
+}
+
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  list-style: none;
+  background: #222;
+  padding: 15px;
+  border-radius: 8px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav a:hover {
+  color: #ff9800;
+}
+
+
+header {
+  text-align: center;
+  padding: 40px 20px;
+}
+
+header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+header p {
+  font-size: 1.2rem;
+  color: #bb267d;
+}
+
+header button {
+  padding: 10px 20px;
+  background: #7a1659;
+  color: rgb(146, 33, 131);
+  border: none;
+  border-radius: 5px;
+  margin-top: 15px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+header button:hover {
+  background: #740f65;
+}
+h1, h2 {
+  animation: fadeSlide 1.5s ease-in-out;
+}
+
+@keyframes fadeSlide {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* === Typewriter effect for tagline === */
+.tagline {
+  overflow: hidden;
+  border-right: 3px solid royalblue;
+  white-space: nowrap;
+  animation: typing 4s steps(40, end), blink 0.8s infinite;
+}
+
+@keyframes typing {
+  from { width: 0; }
+  to { width: 100%; }
+}
+
+@keyframes blink {
+  50% { border-color: transparent; }
+}
+
+/* === Bounce effect for "View My Work" button === */
+button, .cta {
+  animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+}
+
+/* === Fade-up for sections === */
+section {
+  opacity: 0;
+  animation: fadeUp 1.2s ease forwards;
+}
+
+@keyframes fadeUp {
+  0% { opacity: 0; transform: translateY(30px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+
+section {
+  margin: 40px auto;
+  max-width: 800px;
+  background: rgb(105, 8, 92);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(155, 4, 12, 0.1);
+}
+
+section h2 {
+  margin-bottom: 15px;
+  color: #ebe8ea;
+}
+
+
+.profile-pic {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%; 
+  object-fit: cover;  
+  display: block;
+  margin: 20px auto;
+  box-shadow: 0px 4px 10px rgba(128, 13, 13, 0.3);
+}
+
+
+
+.project {
+  margin-bottom: 20px;
+}
+
+.project a {
+  color: #ff9800;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.project a:hover {
+  text-decoration: underline;
+}
+
+
+form input, form textarea {
+  width: 100%;
+  padding: 10px;
+  margin: 8px 0;
+  border: 1px solid #f0e8ef;
+  border-radius: 5px;
+}
+
+form button {
+  padding: 10px 20px;
+  background: #222;
+  color: rgb(228, 220, 226);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+form button:hover {
+  background: #881f7a;
+}
+
+
+footer {
+  text-align: center;
+  margin-top: 40px;
+  font-size: 0.9rem;
+  color: #c7298a;
+}
